@@ -253,3 +253,68 @@ button:hover {
 .discount-code {
     margin-top: 10px;
 }
+
+/* payment.css */
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pay-now-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pay-now-button:hover {
+    background-color: #0056b3;
+}
+
+/* Adjust as per your styling needs */
+.contact-section h2,
+.delivery-section h2,
+.payment-section h2,
+.order-summary h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.input-with-label {
+    font-size: 1em;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.input-with-label:focus {
+    outline: none;
+    border-color: #2C7865; /* Example focus color */
+}
+
+.input-with-label::placeholder {
+    color: #aaa; /* Example placeholder color */
+}
+
+/* Additional styles for specific sections or inputs can be added as needed */

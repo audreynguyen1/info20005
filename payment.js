@@ -66,3 +66,24 @@ function processPayment() {
         alert('Please fill out all required fields in Delivery and Payment sections.');
     }
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var inputFields = document.querySelectorAll('.input-with-label');
+
+    inputFields.forEach(function(input) {
+        var placeholderText = input.getAttribute('placeholder');
+
+        input.addEventListener('focus', function() {
+            if (input.value === '') {
+                input.placeholder = '';
+            }
+        });
+
+        input.addEventListener('blur', function() {
+            if (input.value === '') {
+                input.placeholder = placeholderText;
+            }
+        });
+    });
+});
