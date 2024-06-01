@@ -1,3 +1,4 @@
+// Wait for the DOM to be fully loaded before running the code
 document.addEventListener('DOMContentLoaded', function() {
     displayOrderSummary();
     
@@ -20,12 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Function to display the order summary
 function displayOrderSummary() {
     var cartItems = JSON.parse(localStorage.getItem('cart')) || [];
     var orderSummaryContent = document.getElementById('order-summary-content');
     var totalAmount = 0;
     
-    orderSummaryContent.innerHTML = ''; // Clear previous content
+    orderSummaryContent.innerHTML = ''; 
 
     cartItems.forEach(function(item) {
         var itemElement = document.createElement('div');
@@ -38,11 +40,12 @@ function displayOrderSummary() {
     document.getElementById('total-amount').textContent = 'AU $' + totalAmount.toFixed(2);
 }
 
+// Function to apply a secret discount code
 function applyDiscount(discountCode) {
     var totalAmountElement = document.getElementById('total-amount');
     var totalAmount = parseFloat(totalAmountElement.textContent.replace('AU $', ''));
     
-    // Example: Apply a 10% discount for a specific code
+
     if (discountCode === 'DISCOUNT10') {
         var discountAmount = totalAmount * 0.10;
         totalAmount -= discountAmount;
@@ -53,6 +56,7 @@ function applyDiscount(discountCode) {
     }
 }
 
+// Function to process the payment
 function processPayment() {
     var contactForm = document.getElementById('contact-form');
     var deliveryForm = document.getElementById('delivery-form');
@@ -61,13 +65,13 @@ function processPayment() {
     if (deliveryForm.checkValidity() && paymentForm.checkValidity()) {
         alert('Payment processed successfully!');
         localStorage.removeItem('cart');
-        window.location.href = 'success.html'; // Redirect to a success page
+        window.location.href = 'success.html'; 
     } else {
         alert('Please fill out all required fields in Delivery and Payment sections.');
     }
 }
 
-
+// Wait for the DOM to be fully loaded before running the input placeholder handling code
 document.addEventListener('DOMContentLoaded', function() {
     var inputFields = document.querySelectorAll('.input-with-label');
 
