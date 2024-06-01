@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     displayOrderNumber();
 });
 
+// Function to display order number
 function displayOrderNumber() {
     var orderNumber = generateOrderNumber();
     var orderNumberElement = document.getElementById('order-number');
