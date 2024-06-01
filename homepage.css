@@ -316,7 +316,7 @@
 }
 
   
-/*Slideshow*/
+
 
 .hr {
   border: 1px solid #2C7865;
@@ -327,12 +327,12 @@
       text-align: center;
   }
   
-  /* Three image containers (use 25% for four, and 50% for two, etc) */
+
   .row {
       display: grid;
-      grid-template-columns: repeat(3, 1fr); /* 3 columns */
-      grid-template-rows: repeat(2, auto); /* 2 rows */
-      gap: 5px; /* Reduced gap to bring containers closer together */
+      grid-template-columns: repeat(3, 1fr); 
+      grid-template-rows: repeat(2, auto); 
+      gap: 5px; 
       justify-items: center;
       align-items: center;
       padding: 10px;
@@ -344,14 +344,14 @@
   }
   
   
-    /* Container needed to position the overlay. Adjust the width as needed */
+
   .box {
       position: relative;
       width: 250px;
       margin: auto;
     }
    
-    /* Make the image to responsive */
+
   .box img {
       width: 250px;
       height: 250px;
@@ -360,7 +360,7 @@
      
     }
    
-    /* The overlay effect - lays on top of the container and over the image */
+/* The overlay effect - lays on top of the container and over the image */
   .overlay {
       position: absolute;
       bottom: 0;
@@ -377,8 +377,7 @@
       text-align: center;
       border-radius: 25px;
     }
-   
-    /* When you mouse over the container, fade in the overlay title */
+
   .box:hover .overlay {
       opacity: 1;
     }
@@ -404,20 +403,19 @@
   }
 }
 
-/*Collections*/
+
   
   
 /*Why choose us*/
 
-/* Main Container Padding and Margins */
+
 .container {
   width: 100%;
-  max-width: 1200px; /* Adjust as per your design */
-  margin: 0 auto; /* Centers the container horizontally */
-  padding: 20px; /* Adjust padding as per your design */
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 20px; 
 }
 
-/* Why Choose Us Section */
 .about {
   text-align: center;
   font-family: sans-serif;
@@ -450,12 +448,12 @@
   margin-top: 40px; 
 }
 
-/* Text in Why Choose Us Section */
+
 .about b {
-  display: block; /* Ensures full width for the text */
-  text-align: center; /* Adjust alignment as per your design */
-  margin-top: 10px; /* Adjust top margin */
-  margin-bottom: 40px; /* Adds bottom margin to create space between text and image */
+  display: block; 
+  text-align: center; 
+  margin-top: 10px; 
+  margin-bottom: 40px; 
   font-size: 18px;
   font-weight: 500;
   font-family: sans-serif;
@@ -474,10 +472,6 @@
 }
 
 
-
-  
-/*Why choose us*/
-  
   
 /* Reviews */
 * {
@@ -487,12 +481,12 @@
   font-family: sans-serif;
 }
 
-/* Main Container Padding and Margins */
+
 .container {
   width: 100%;
-  max-width: 1200px; /* Adjust as per your design */
-  margin: 0 auto; /* Centers the container horizontally */
-  padding: 20px; /* Adjust padding as per your design */
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 20px; 
   text-align: center;
 }
 
@@ -517,7 +511,7 @@ h2 {
   height: 150px;
   border-radius: 15px;
   object-fit: cover;
-  margin-bottom: 10px; /* Add margin to create space between image and text */
+  margin-bottom: 10px; 
 }
 
 .reviewSection {
@@ -648,7 +642,6 @@ article p {
   }
 }
 
-/* Global Media Queries */
 @media screen and (max-width: 1024px) {
   .container {
     padding: 10px;
@@ -669,4 +662,5 @@ article p {
     font-size: 14px;
   }
 }
+
 
