@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const productCards = document.querySelectorAll('.productgrid .card');
     const paginationLinks = document.querySelectorAll('.pagination a');
 
+    // Function to display a specific page of products
     function showPage(pageNumber) {
         const start = (pageNumber - 1) * productsPerPage;
         const end = pageNumber * productsPerPage;
@@ -19,17 +20,18 @@ document.addEventListener('DOMContentLoaded', function() {
         paginationLinks[pageNumber].classList.add('active');
     }
 
+    // Add click event listeners to pagination links
     paginationLinks.forEach((link, index) => {
         if (index === 0) {
-            link.addEventListener('click', () => showPage(1)); // « button
+            link.addEventListener('click', () => showPage(1)); 
         } else if (index === paginationLinks.length - 1) {
-            link.addEventListener('click', () => showPage(paginationLinks.length - 2)); // » button
+            link.addEventListener('click', () => showPage(paginationLinks.length - 2)); 
         } else {
             link.addEventListener('click', () => showPage(index));
         }
     });
 
-    showPage(1); // Display the first page of products initially
+    showPage(1); 
 });
 
 
