@@ -15,6 +15,7 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
+// Function to show all the slides in the slideshow
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
@@ -35,6 +36,7 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
+// Function to toggle mobile menu
 function toggleMenu() {
   var header = document.getElementById("myHeader");
   if (header.className === "header") {
