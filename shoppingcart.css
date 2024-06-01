@@ -43,21 +43,25 @@ body {
     display: flex;
 }
 
+/* Responsive styles for header */
 @media screen and (max-width: 500px) {
     .header {
         flex-direction: column;
         align-items: flex-start;
+        padding: 15px 20px;
     }
 
     .header a {
-        float: none;
         display: block;
         text-align: left;
+        padding: 10px 0;
+        font-size: 16px;
     }
 
     .header-right {
         width: 100%;
         justify-content: flex-start;
+        flex-direction: column;
     }
 }
 
@@ -188,15 +192,36 @@ div.social {
     text-align: right;
 }
 
+/* Responsive styles for footer */
 @media screen and (max-width: 850px) {
     .row.primary {
         grid-template-columns: 1fr;
+    }
+
+    .column {
+        padding: 0 1em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    ul li {
+        font-size: 0.9em;
+    }
+
+    div.social {
+        font-size: 1.5em;
+    }
+
+    .copyright p {
+        text-align: center;
     }
 }
 
 /*Header and Footer styles*/
 
-/* shoppingcart.css */
+/* Shopping Cart */
 body {
     background-color: #F8F6E3;
     font-family: Arial, sans-serif;
@@ -223,6 +248,10 @@ main {
     text-align: center;
 }
 
+.cart-page h1 {
+    color: #2C7865;
+}
+
 .total-container {
     text-align: center;
     margin-top: 20px;
@@ -235,6 +264,7 @@ main {
     padding: 10px 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #496989;
 }
 
 .total-box h3 {
@@ -262,7 +292,7 @@ main {
     padding: 10px 20px;
     border: none;
     border-radius: 8px;
-    background-color: #007BFF;
+    background-color: #2C7865;
     color: white;
     font-size: 16px;
     cursor: pointer;
@@ -270,11 +300,11 @@ main {
 }
 
 .payment-button.apple-pay {
-    background-color: #000;
+    background-color: #2C7865;
 }
 
 .payment-button.google-pay {
-    background-color: #4285F4;
+    background-color: #2C7865
 }
 
 .payment-button i {
@@ -283,5 +313,30 @@ main {
 
 .payment-button:hover,
 .continue-button:hover {
-    background-color: #0056b3;
+    background-color: #496989;
+}
+
+/* Responsive styles for Shopping Cart */
+@media screen and (max-width: 600px) {
+    .cart-page {
+        padding: 10px;
+    }
+
+    .total-box h3 {
+        font-size: 16px;
+    }
+
+    .total-box p {
+        font-size: 20px;
+    }
+
+    .continue-button,
+    .payment-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .payment-button i {
+        margin-right: 6px;
+    }
 }
