@@ -9,11 +9,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Function to display items in cart
 function displayCartItems() {
     var cartItems = JSON.parse(localStorage.getItem('cart')) || [];
     var cartItemsContainer = document.getElementById('cart-items');
     var totalBox = document.getElementById('total-amount');
-    cartItemsContainer.innerHTML = ''; // Clear previous content
+    cartItemsContainer.innerHTML = ''; 
 
     var totalAmount = 0;
 
@@ -36,7 +37,7 @@ function displayCartItems() {
         var removeButton = document.createElement('button');
         removeButton.textContent = 'Remove';
         removeButton.classList.add('remove-button');
-        removeButton.setAttribute('data-name', item.name); // Store item name as data attribute
+        removeButton.setAttribute('data-name', item.name); 
         removeButton.addEventListener('click', function() {
             removeFromCart(item.name);
         });
@@ -44,11 +45,11 @@ function displayCartItems() {
         itemElement.appendChild(removeButton);
         cartItemsContainer.appendChild(itemElement);
 
-        // Calculate total amount
+
         totalAmount += item.price * item.quantity;
     });
 
-    // Display total amount
+
     totalBox.textContent = 'AU $' + totalAmount.toFixed(2);
 
     if (cartItems.length === 0) {
@@ -58,16 +59,17 @@ function displayCartItems() {
     }
 }
 
+// Function to remove item from cart
 function removeFromCart(itemName) {
-    console.log('Removing item:', itemName); // Debugging statement
+    console.log('Removing item:', itemName); 
     var cartItems = JSON.parse(localStorage.getItem('cart')) || [];
     var updatedCartItems = cartItems.filter(item => item.name !== itemName);
     localStorage.setItem('cart', JSON.stringify(updatedCartItems));
     displayCartItems();
 }
 
-/* Add to cart functionality remains unchanged. Ensure it's defined elsewhere in your code. */
 
+// Function to add item from cart
 function addToCart(item) {
     var cartItems = JSON.parse(localStorage.getItem('cart')) || [];
     var existingItem = cartItems.find(cartItem => cartItem.name === item.name);
