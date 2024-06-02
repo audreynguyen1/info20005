@@ -299,9 +299,10 @@ div.social {
   .page-description {
     font-size: 0.9em;
     padding: 0 10px;
-    max-width: 100%; 
+    max-width: calc(100% - 30px); 
   }
 }
+
 
 
 
