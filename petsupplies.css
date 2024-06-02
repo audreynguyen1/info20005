@@ -280,6 +280,8 @@ div.social {
   font-size: small;
   word-wrap: break-word; 
   margin-top: 0.5em; 
+  color: #496989;
+  text-align: center;
 }
 
 /* Adjust styles for mobile dimensions */
