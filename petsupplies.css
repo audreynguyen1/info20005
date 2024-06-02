@@ -284,6 +284,9 @@ div.social {
   margin-top: 0.5em;
   color: #496989;
   text-align: center;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
 }
 
 /* Adjust styles for mobile dimensions */
