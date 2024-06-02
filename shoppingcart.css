@@ -3,6 +3,7 @@
     overflow: hidden;
     background-color: #D9EDBF;
     padding: 30px 50px;
+    width: 100vw;
   }
 
   body {
@@ -205,11 +206,19 @@
     gap: 20px;
     padding: 20px;
   }
+  .footer {
+    padding: 20px;
+}
   
   .footer-menu, .copyright {
     text-align: center;
     margin: 10px 0;
   }
+
+  main {
+    width: calc(100vw - 40px); 
+    padding: 10px 20px; 
+}
 }
 
 
@@ -229,6 +238,8 @@ main {
     align-items: center;
     flex-direction: column;
     width: 100%;
+    width: calc(100vw - 100px);
+    padding: 20px 50px;
 }
 
 .cart-page {
@@ -332,5 +343,8 @@ main {
 
     .payment-button i {
         margin-right: 6px;
+    }
+    main {
+        padding: 10px; 
     }
 }
