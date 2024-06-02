@@ -229,7 +229,11 @@
   .mySlides {
     display: none;
   }
-  
+
+  .mySlides img {
+    width: 100%;
+    height: auto; 
+  }
   
   .prev, .next {
     cursor: pointer;
@@ -312,6 +316,11 @@
   
   .numbertext {
     font-size: 10px;
+  }
+
+  .mySlides img {
+    width: 100%;
+    height: auto; 
   }
 }
 
@@ -662,5 +671,4 @@ article p {
     font-size: 14px;
   }
 }
-
 
