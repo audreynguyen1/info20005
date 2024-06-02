@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="search.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>The Aquarium Shop Australia</title>
+    <script src="search.js"></script>
+  </head>
+  <body style="background-color:#F8F6E3;">
+    <header>
+        <nav>
+            <ul>
+                <div class="header">
+                    <a href="index.html" class="logo">The Aquarium Shop Australia</a>
+                    <div class="header-right">
+                    <a href="index.html" class="homebutton">Home</a>
+                    <a href="petsupplies.html" class="petbutton"></i> Pet Supplies</a>
+                    <a href="#contact" class="contactbutton"> Contact Us</a>
+                    <a href="#shipping" class="shippingbutton"> Shipping</a>
+                    <a href="#profile" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+                        <i class="fa fa-user"></i>
+                      </a>
+                    <a href="search.html" class="searchbutton">
+                        <i class="fa fa-search"></i>
+                      </a>
+                    <a href="shoppingcart.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+                        <i class="fa fa-shopping-bag"></i>
+                      </a> 
+                    </div> 
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+      <form id="searchbar">
+          <input type="text" id="search" name="search" placeholder="Search for items">
+          <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <div id="search-results-message" class="search-results-message"></div>
+  </div>
+  
+  
+  <div class="productgrid">
+    <!-- Product Cards for Page 1 -->
+    <a href="product1.html">
+        <div class="card">
+            <img src="Hikari-Cichlid-Gold-Mini-250g_06202023_024053.jpg" alt="fish food" style="width:100%">
+            <h1>Hikari Cichlid Gold Fish Color Enhancing Diet 250g</h1>
+            <p class="price">AU $35.75</p>
+            <div class="stars">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+          </div>
+        </div>
+    </a>
+    <a href="product2.html">
+        <div class="card">
+            <img src="cattoy.jpg" alt="Mouse Toy" style="width:100%">
+            <h1>Move It Mouse Toy</h1>
+            <p class="price">AU $7.95</p>
+            <div class="stars">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+          </div>
+        </div>
+    </a>
+    <a href="product1.html">
+        <div class="card">
+            <img src="cat collar.webp" alt="Cat Collar" style="width:100%">
+            <h1>Catit Nylon Breakaway Adjustable Cat Collar</h1>
+            <p class="price">AU $8.95</p>
+            <div class="stars">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+          </div>
+        </div>
+    </a>
+    <a href="product2.html">
+        <div class="card">
+            <img src="Breeders-Choice-Cat-Litter-30L_1400x.webp" alt="Cat Litter" style="width:100%">
+            <h1>Breeder's Choice Cat Litter 30L</h1>
+            <p class="price">AU $31.99</p>
+            <div class="stars">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+          </div>
+        </div>
+    </a>
+
+    <!-- Product Cards for Page 2 -->
+    <a href="product1.html">
+        <div class="card">
+            <img src="fishfood2.jpg" alt="Fish Food" style="width:100%">
+            <h1>Hikari Economy Large Fish Food Pellet 4kg</h1>
+            <p class="price">AU $172.50</p>
+            <div class="stars">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+          </div>
+        </div>
+    </a>
+    <a href="product1.html">
+        <div class="card">
+            <img src="nutra1.webp" alt="Fish Food" style="width:100%">
+            <h1>Nutrafin Max Small Tropical Micro Granules 40g</h1>
+            <p class="price">AU $19.95</p>
+            <div class="stars">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+          </div>
+        </div>
+    </a>
+</div>
+
+<!-- Page number buttons -->
+<div class="pagination">
+    <a href="#">&laquo;</a>
+    <a href="#" class="active">1</a>
+    <a href="#">2</a>
+    <a href="#">&raquo;</a>
+</div>
+
+<footer>
+  <div class="row primary">
+  <div class="column about">
+    <h3>Connect</h3>
+    <div class="social">
+      <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.linkedin.com" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+  </div>
+
+  <div class="column link">
+    <h3>Links</h3>
+    <ul>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#faqs">FAQs</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#refund">Refund Policy</a></li>
+      <li><a href="#shiping">Shipping Details</a></li>
+    </ul>
+  </div>
+
+  <div class="column subscribe">
+    <h3>Newsletter</h3>
+    <div>
+      <input type="email" placeholder="Your email here" />
+      <button>Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<div class="row copyright">
+  <div class="footer-menu">
+
+  <a href="">Home</a>
+  <a href="">F.A.Q</a>
+  <a href="">Cookies Policy</a>
+  <a href="">Terms Of Service</a>
+  <a href="">Support</a>
+
+  </div>
+   <p>Copyright &copy; 2024 The Aquarium Shop Australia</p>
+</div>
+</footer>
+
+  </body>
+</html>
